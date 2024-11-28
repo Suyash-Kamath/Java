@@ -1,0 +1,73 @@
+JShell -> used for experiment 
+
+JShell is an interactive command-line tool that was introduced in Java 9 to 
+facilitate the exploration and experimentation with Java code in a more immediate and dynamic way.
+ It acts as a REPL (Read-Eval-Print Loop) for Java, allowing developers to quickly test out Java code 
+ snippets without the need to write a full program, compile, and run it.
+
+Key Features of JShell:
+Interactive Shell: You can type Java code directly into the JShell prompt, and it immediately 
+evaluates the expressions, prints results, and continues to prompt for further input.
+
+No Need for Main Method: Unlike regular Java programs that require a main() method, you 
+can directly execute Java expressions, declarations, and statements in JShell.
+
+Immediate Feedback: You get immediate feedback on the Java code you write.
+ This is useful for testing small code snippets, experimenting with APIs, 
+ and learning Java without the overhead of creating classes and methods.
+
+Support for Variables, Methods, and Classes: You can define variables, 
+methods, and even small classes directly within the JShell environment.
+
+Imports: You can import classes or packages just like in a normal Java program.
+
+Example Usage:
+Starting JShell: After installing Java 9 or later, you can start JShell by 
+typing the following command in the terminal:
+
+Copy code
+jshell
+Basic Example: Once inside JShell, you can enter simple expressions:
+
+java
+Copy code
+jshell> 3 + 4
+$1 ==> 7
+Declaring Variables: You can declare variables directly:
+
+java
+Copy code
+jshell> int x = 10;
+x ==> 10
+Defining Methods: You can also define methods:
+
+java
+Copy code
+jshell> int square(int n) { return n * n; }
+|  created method square(int)
+Using Imports: You can import classes as well:
+
+java
+Copy code
+jshell> import java.util.List;
+jshell> List<String> list = List.of("Apple", "Banana", "Cherry");
+list ==> [Apple, Banana, Cherry]
+Benefits of JShell:
+Learning Tool: It is great for beginners who want to experiment with Java and understand its 
+syntax and behavior in an interactive way.
+
+Prototyping: Developers can use JShell to quickly prototype
+ new code, try out small snippets, or debug individual expressions 
+without needing to set up a full project.
+
+Testing: It allows for rapid testing of Java APIs or algorithms.
+Exiting JShell:
+To exit JShell, you simply type:
+
+java
+Copy code
+/exit
+
+In summary, JShell is a valuable tool for Java developers looking to work 
+interactively with Java code, making it easier to experiment and test Java code without 
+the usual setup overhead.
