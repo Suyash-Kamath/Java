@@ -116,5 +116,5 @@ public class DataTypes {
 
 /*
  
-    Wrapper class is used if you want an additional functionalities
+    Wrapper class is used if you want an additional functionalities to Primitives
  */
