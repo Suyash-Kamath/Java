@@ -121,3 +121,23 @@ In Java, type promotion occurs when an operation involves different data types, 
 These rules ensure that operations with different primitive types are handled in a way that preserves accuracy, and that higher precision types (like **double**) are preferred over lower precision types (like **int**) when needed.
 
 */
+
+
+public class Main {
+    public static void main(String[] args) {
+               byte b = 42;
+        char c = 'a';
+        short s = 1024;
+        int i = 50000;
+        float f = 5.67f;
+        double d = 0.1234;
+        double result = (f * b) + (i / c) - (d * s);
+        // float + int - double = double
+        System.out.println((f * b) + " " + (i / c) + " " + (d * s));
+        System.out.println(result);
+
+    }
+}
+
+
+// ultimately output  will be string in the above program In Java, string concatenation (using +) converts all the operands involved into their string representations before concatenating them. So, the final result after the concatenation will be a single string that combines the string representations of the individual results.
