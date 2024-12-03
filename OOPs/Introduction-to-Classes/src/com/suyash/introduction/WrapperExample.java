@@ -68,6 +68,12 @@ original reference.
         suyash.name = "other name";
         // when a non primitive is final , you cannot reassign it
 //        suyash = new A("new object); // cannot do this
+
+        A obj;
+
+        for(int i=0;i<10000000;i++){
+            obj = new A("random name");
+        }
     }
 
 
@@ -103,8 +109,14 @@ if the object itself is mutable.
     String name ;
 
     public A(String name){
+        System.out.println("created");
         this.name = name;
     }
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Object is destroyed");
+    }
+// you cannot free memory manually but can tell what to do when the memory is freed
 
 }
 
